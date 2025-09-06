@@ -1,6 +1,6 @@
 from scipy.sparse import csr_matrix
 import numpy as np
-from Cram import CRAM
+from master_equation.Cram import CRAM
 import matplotlib.pyplot as plt
 
 A = np.matrix([[-1, 0 , 0, 0], [1, -1.2, 0, 0], [0, 1.2, -0.8, 0], [0, 0, 0.8, 0]])  # Macierz wejściowa
