@@ -1,0 +1,20 @@
+R (list)exoticPlanningLengthCostsCombinable = list(2000, 2349.836752, 2738.070813, 3153.550554, 3590.542004, 4045.47821, 4515.900532, 5000)
+*
+R (list)exoticPlanningLengthCostsUncombinable = list(4500,	4523.809524, 4563.492063, 4619.047619, 4690.47619, 4777.777778, 4880.952381, 5000)
+*
+R (list)exoticPlanningBucketLengths = list(3,4,7,7,7,7)
+*
+R (int)exoticPlanningAverageChargesPerDay=48
+*
+R (list)exoticPlanningBadlyCombiningAnalyses=list("KK60", "KM60", "K600","LK50","LK70","LM10","LT60","LT70","LT80","L460","L500","L600","L620","L630","L660","L760","L770","L810","L920","L950","L960","L970","TB70")
+*
+R (list)exoticPlanningWellCombiningAnalyses=list("KB30", "KK70", "KK80", "KM20", "KM30", "KM40", "KM50", "KM70", "KM80", "KN20", "KN30", "KN40", "KN50", "KN70", "KR50", "KT10", "KT50", "KT70", "K110", "K120", "K130", "K140", "K170", "K200", "K210", "K220", "K270", "K320", "K340", "K350", "K360", "K370", "K380", "K390", "K450", "K710", "K820", "LK90", "NB60", "N710", "TB10", "TB30", "TB40", "TB50", "T210", "T220", "T230", "T250", "T690")
+*
+# points on the soft flow cost piecewise linear function (as a fraction of the [min,max] bounds)
+# to convert to absolute : min + (max-min) * fraction 
+R (list)flowCostPoints=list(     -0.5,   -0.2,   0,   0.3,  0.7,  1,  1.4,  2 )
+*
+# slopes on the soft flow cost piecewise linear function (in €/ton)
+R (list)flowCostSlopes=list(-200,     -8,     -4,  -1,    0,    1,  2,    4,  100 )
+*
+R (int)heatWeight              = 298400  /* weight in kg */
