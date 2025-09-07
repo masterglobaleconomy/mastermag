@@ -1,8 +1,17 @@
 import numpy as np
 from master_equation.Cram import CRAM
+import pandas as pd
 import matplotlib.pyplot as plt
 
-A = np.matrix([[-1, 0 , 0, 0], [1, -1.2, 0, 0], [0, 1.2, -0.8, 0], [0, 0, 0.8, 0]])  # Macierz wejściowa
+A = np.matrix(
+    [
+        [-1.0,  0.0,  0.0,  0.0], 
+        [ 1.0, -1.2,  0.0,  0.0], 
+        [ 0.0,  1.2, -0.8,  0.0], 
+        [ 0.0,  0.0,  0.8,  0.0]
+    ]
+)  # Macierz wejściowa
+
 B = np.array([0.0, 0.0, 0.0, 0.0]) # Macierz diagonalna która wprowadzi element wzrostu  dA/dt = s*A
 
 A += np.matrix(np.diag(B))
@@ -37,3 +46,6 @@ c = plt.scatter(X, Y3, s=0.5)
 d = plt.scatter(X, Y4, s=0.5)
 plt.legend((a, b , c, d), ('a', 'b', 'c', 'd'))
 plt.show()
+
+data = pd.DataFrame({"Y1": Y1, "Y2": Y2, "Y3": Y3, "Y4": Y4})
+data.to_csv("data.csv", index=False)

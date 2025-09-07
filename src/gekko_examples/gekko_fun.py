@@ -3,7 +3,10 @@ import numpy as np
 
 # https://gekko.readthedocs.io/en/latest/model_methods.html
 def fun(x1, x2, x3, x4):
-    return x1*x4*(x1+x2+x3)+x3
+    sum = 0.0
+    for i in range(10):
+        sum += x1*x4*(x1+x2+x3)+x3
+    return sum
 
 
 m = GEKKO()
