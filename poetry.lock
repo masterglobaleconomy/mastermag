@@ -190,6 +190,21 @@ unicode = ["unicodedata2 (>=15.1.0) ; python_version <= \"3.12\""]
 woff = ["brotli (>=1.0.1) ; platform_python_implementation == \"CPython\"", "brotlicffi (>=0.8.0) ; platform_python_implementation != \"CPython\"", "zopfli (>=0.1.4)"]
 
 [[package]]
+name = "gekko"
+version = "1.3.0"
+description = "Machine learning and optimization for dynamic systems"
+optional = false
+python-versions = ">=2.6"
+groups = ["main"]
+files = [
+    {file = "gekko-1.3.0-py3-none-any.whl", hash = "sha256:78e6e51e1e3ea2ad5476cd2e70a7f0db0acc5ffafed9459dfc1ba120f13ce3e4"},
+    {file = "gekko-1.3.0.tar.gz", hash = "sha256:4bfb8703550f3d7d79f593a4fef22d495599e1556ed41ca585cf7c2ec940bad2"},
+]
+
+[package.dependencies]
+numpy = ">=1.8"
+
+[[package]]
 name = "kiwisolver"
 version = "1.4.9"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -903,4 +918,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "51955f67d5b258d3d32b4a935b2ce9bf4de4a8011aa5caa99110b9fa9f2afc5f"
+content-hash = "5566cc2e49ae79caaab8f5dc8bc5c6aa3a68c9e54ffd6c43b16b2a312891d37d"
