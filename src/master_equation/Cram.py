@@ -95,8 +95,11 @@ class CRAM():
         alpha0 = 2.124853710495224e-16
 
         k = 8
+        if type(n0) is list:
+            y = np.array(n0, dtype=np.float64)
+        else:
+            y = n0 # assuming n0 is np.array already
 
-        y = np.array(n0, dtype=np.float64)
         for l in range(1, k+1):
             y = 2.0*np.real(alpha[l]*sla.spsolve(A*dt - theta[l]*sp.eye(n), y)) + y
 
@@ -188,7 +191,11 @@ class CRAM():
 
         k = 24
 
-        y = np.array(n0, dtype=np.float64)
+        if type(n0) is list:
+            y = np.array(n0, dtype=np.float64)
+        else:
+            y = n0 # assuming n0 is np.array already
+
         for l in range(k):
             y = 2.0*np.real(alpha[l]*sla.spsolve(A*dt - theta[l]*sp.eye(n), y)) + y
 
