@@ -6,6 +6,7 @@ Implements two different forms of CRAM for use in opendeplete.
 import numpy as np
 import scipy.sparse as sp
 import scipy.sparse.linalg as sla
+
 from matplotlib import pyplot as plt
 
 class CRAM():
