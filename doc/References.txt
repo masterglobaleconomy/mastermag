@@ -1,0 +1,35 @@
+[Article]
+DAGs with NO TEARS: Continuous Optimization for Structure Learning
+https://arxiv.org/abs/1803.01422
+
+[Article]
+1. Learning Sparse Nonparametric DAGs
+https://arxiv.org/abs/1909.13189
+
+[Book]
+2. ANCESTRAL GRAPH MARKOV MODELS
+https://www.cmu.edu/dietrich/philosophy/docs/spirtes/annals2002.pdf
+
+[Article]
+3. ExMAG: Learning of Maximally Ancestral Graphs
+https://arxiv.org/abs/2503.08245
+
+[Article]
+4. ExDAG: Exact learning of DAGs
+https://arxiv.org/abs/2406.15229v1
+
+[Article]
+5. ExDAG: An MIQP Formulation and Algorithm for Learning DAGs
+https://arxiv.org/abs/2406.15229
+
+[Article]
+6. European systemic credit risk transmission using Bayesian networks
+https://www.sciencedirect.com/science/article/pii/S0275531923000405
+
+[Book]
+7. Causal Discovery with Ancestral Graphs
+https://ora.ox.ac.uk/objects/uuid:3ea3c0a6-9c63-441f-ba56-0ab3dd83ad93/files/d5q47rp344
+
+[Article]
+8. Expert-Aided Causal Discovery of Ancestral Graphs
+https://arxiv.org/abs/2309.12032
