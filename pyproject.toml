@@ -19,6 +19,7 @@ dependencies = [
     "load-dotenv>=0.1.0",
     "tqdm>=4.67.1",
     "loguru>=0.7.3",
+    "networkx>=3.6.1",
 ]
 
 [tool.poetry]
